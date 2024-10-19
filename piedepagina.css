@@ -1,0 +1,118 @@
+.titulo-footer {
+    font-size: 36px;
+    margin-left: 75px;
+}
+
+.entregas {
+    display: flex;
+    margin: 50px 200px;
+    text-align: center;
+}
+
+.entregas-info {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.entrgas-titulo {
+    font-size: 24px;
+}
+
+.entregas-texto {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+}
+
+.footer-correo {
+    margin-left: 280px;
+}
+
+.descuento {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.correo {
+    margin: 10px 20px;
+}
+
+.correo-cuadro {
+    width: 300px;
+}
+
+.correo-cuadro[type="email"] {
+    text-align: center;
+}
+
+.footer-logos {
+    margin-right: 350px;
+}
+
+.logo-final {
+    margin-left: 800px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .titulo-footer {
+        font-size: 24px; /* Reducir tamaño de la fuente */
+        margin-left: 20px; /* Ajustar margen */
+    }
+
+    .entregas {
+        flex-direction: column; /* Cambiar a columna en lugar de fila */
+        margin: 20px 0; /* Reducir los márgenes */
+    }
+
+    .entregas-info {
+        margin: 10px 0; /* Ajustar margen entre elementos */
+        padding: 15px; /* Aumentar el padding para mejorar legibilidad */
+    }
+
+    .entrgas-titulo {
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+    }
+
+    .entregas-texto {
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+
+    .footer {
+        flex-direction: column; /* Cambiar a columna para alinearlo verticalmente */
+        height: auto; /* Permitir que la altura sea dinámica */
+        padding: 20px; /* Mantener el padding */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    .footer-correo {
+        margin-left: 0; /* Quitar el margen izquierdo para centrar */
+    }
+
+    .footer-logos {
+        margin-right: 0; /* Quitar el margen derecho para centrar */
+    }
+
+    .logo-final {
+        margin-left: 0; /* Quitar el margen izquierdo para centrar */
+    }
+
+    .correo-cuadro {
+        width: 100%; /* Hacer que el cuadro del correo ocupe todo el ancho */
+    }
+
+    .descuento {
+        font-size: 20px; /* Reducir el tamaño de la fuente */
+        margin: 5px 0; /* Ajustar el margen */
+    }
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+.encabezado-arriba {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.encabezado-arriba-logos {
+    margin-left: 100px;
+}
+
+.promocion {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.promocion-diamante {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.promocion-texto {
+    font-size: 30px;
+    text-align: center;
+}
+
+.botones-encabezado1 {
+    display: flex;
+    margin-right: 250px;
+}
+
+.search-button, .boton-carrito {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.encabezado-abajo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff;
+    height: 120px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.encabezado-abajo-lista {
+    display: flex;
+    list-style: none;
+}
+
+.encabezado-abajo-menu {
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.tituloprincipal {
+    font-family: "Cookie", cursive;
+    font-size: 80px;
+    margin-right: 250px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.imagen-logoprincipal {
+    width: 150px;
+    height: 150px;
+}
+
+.titulo-productos {
+    font-size: 48px;
+    text-align: center;
+    color: black;
+}
+
+.container-productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.productos {
+    width: 480px;
+    height: 700px;
+    padding-top: 40px;
+    margin: 60px 70px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    border: 3.5px solid #846f18;
+}
+
+.polos:hover {
+    transform: scale(1.2);
+}
+
+.nombre-producto {
+    font-size: 20px;
+    padding-top: 50px;
+    color: #cd9484;
+}
+
+.precio-producto {
+    color: black;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.entregas {
+    display: flex;
+    margin: 50px 200px;
+}
+
+.entregas-info {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-top: 2px solid #ccc;
+    padding: 20px;
+}
+
+.footer-correo {
+    margin-left: 280px;
+}
+
+.footer-logos {
+    margin-right: 350px;
+}
+
+.logo-final {
+    margin-left: 800px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .encabezado-arriba {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .encabezado-arriba-logos {
+        margin-left: 0;
+    }
+
+    .promocion {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .botones-encabezado1 {
+        margin-right: 0;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .encabezado-abajo {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .encabezado-abajo-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encabezado-abajo-menu {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .tituloprincipal {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .imagen-logoprincipal {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .nombre-producto {
+        font-size: 18px;
+    }
+
+    .precio-producto {
+        font-size: 20px;
+    }
+
+    .entregas {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .entregas-info {
+        margin: 10px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-correo,
+    .footer-logos {
+        margin: 10px 0;
+    }
+}
